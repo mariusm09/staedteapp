@@ -24,6 +24,13 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+//schrift
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('../lib/ionic/fonts/gothic.eot');
+  src: local('Century Gothic'), url('../lib/ionic/fonts/gothic.woff') format('woff'), url('../lib/ionic/fonts/gothic.ttf') format('truetype');
+}
+
 //over all
 body {
     font-family: 'Century Gothic';

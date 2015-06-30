@@ -5,7 +5,7 @@
     <ion-content>
         <div class="stadt">
             <div>
-                <img src="../img/{{city.id}}/{{city.img}}" class="topbild" />
+                <img src="img/{{city.id}}/{{city.img}}" class="topbild" />
             </div>
             <h2>{{city.title}}</h2>
             <p>
@@ -24,7 +24,6 @@
                             <span ng-if="content.type=='text'">{{content.item}}</span>
                             <ul ng-if="content.type=='list'">
                                 <li ng-repeat="listitem in content.item">{{listitem}}</li>
-                                
                             </ul>
                         </div>
                         

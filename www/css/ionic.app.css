@@ -7675,6 +7675,11 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('../lib/ionic/fonts/gothic.eot');
+  src: local('Century Gothic'), url('../lib/ionic/fonts/gothic.woff') format('woff'), url('../lib/ionic/fonts/gothic.ttf') format('truetype'); }
+
 body {
   font-family: 'Century Gothic'; }
 

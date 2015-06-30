@@ -1,0 +1,38 @@
+﻿<ion-view view-title="{{city.name}}">
+    <ion-nav-buttons side="right" ng-class="">
+        <a class="button button-icon icon ion-bookmark" ui-sref="app.favorites"></a>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="stadt">
+            <div>
+                <img src="../img/{{city.id}}/{{city.img}}" class="topbild" />
+            </div>
+            <h2>{{city.title}}</h2>
+            <p>
+              {{city.text}}  
+            </p>
+            <div ng-repeat="group in city.additionalInfos">
+                <div class="item-stable stadtkacheln"
+                          ng-click="toggleGroup(group)"
+                          ng-class="{active: isGroupShown(group)}">
+                    <i class="{{group.icon}} items"></i>
+                    {{group.groupname}}
+                    <i class="icon abs-right" ng-class="isGroupShown(group) ? 'ion-chevron-up' : 'ion-chevron-down'"></i>
+                    <div class="item-accordion"
+                         ng-show="isGroupShown(group)">
+                        <div ng-repeat="content in group.content">
+                            <span ng-if="content.type=='text'">{{content.item}}</span>
+                            <ul ng-if="content.type=='list'">
+                                <li ng-repeat="listitem in content.item">{{listitem}}</li>
+                                
+                            </ul>
+                        </div>
+                        
+                        {{group.list}}
+                    </div>
+                </div>
+               
+            </div>
+            </div>
+    </ion-content>
+</ion-view>

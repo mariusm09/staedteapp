@@ -3,16 +3,55 @@
 .controller('AppCtrl', function ($scope, $state) {
     //if ()
     //$scope.currentState = $state.current.name;
-    console.log($state);
+    //console.log($state);
 })
 
 .controller('OverviewCtrl', function ($scope, DataFactory) {
-    console.log(DataFactory.getCities());
     $scope.cities = DataFactory.getCities();
 })
 
-.controller('CityDetailCtrl', function ($scope, $stateParams, DataFactory) {
+.controller('CityDetailCtrl', function ($scope, $stateParams, DataFactory, Openweathermap, Openweatherforecast) {
     $scope.city = DataFactory.getCity($stateParams.cityId);
+
+        // Celsius = c, Fahrenheit = f
+        $scope.measure = 'c';
+        // Keine Wetterdaten
+        $scope.hasWeatherData = true;
+
+        var weatherLocation = $scope.city.name+","+$scope.city.countryCode;
+
+        Openweathermap.getWeatherByLocationString(
+            weatherLocation,
+            function(weatherData){
+                if (weatherData.cod != 200) {
+                    $scope.hasWeatherData = false;
+                    return;
+                }
+                $scope.weatherdata = weatherData;
+                console.log("weather", weatherData);
+            },
+            function() {
+                $scope.hasWeatherData = false;
+            }
+        );
+
+        Openweatherforecast.getWeatherByLocationString(
+            weatherLocation,
+            function(weatherData){
+                if (weatherData.cod != 200) {
+                    $scope.hasWeatherData = false;
+                    return;
+                }
+                $scope.weatherforecastdata = weatherData;
+                console.log("forecast", weatherData);
+            },
+            function() {
+                $scope.hasWeatherData = false;
+            }
+        );
+
+
+
     $scope.toggleGroup = function (group) {
         if ($scope.isGroupShown(group)) {
             $scope.shownGroup = null;

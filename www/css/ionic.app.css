@@ -7726,28 +7726,38 @@ h1, h2, h3, h4, h5 {
 .topbild {
   width: 100%; }
 
+.toptext {
+  padding-left: 17px;
+  padding-top: 7px; }
+
 .stadtkacheln {
-  font-weight: 600;
+  font-weight: 800;
   color: dimgrey;
   padding: 20px;
   border-bottom: 1px solid dimgrey; }
   .stadtkacheln .items {
     margin-right: 15px; }
 
+.groupname {
+  font-size: 14px; }
+
 .abs-right {
   color: lightgrey;
   position: absolute;
-  right: 15px; }
+  right: 15px;
+  font-weight: 900; }
 
 .item-accordion {
-  line-height: 38px;
-  margin-top: 5px;
-  padding: 10px;
+  padding: 7px;
   padding-left: 0px;
   transition: 0.15s all linear; }
 
 .item-accordion.ng-hide {
   line-height: 0px; }
+
+.citydetailul {
+  list-style: circle;
+  padding-left: 17px; }
 
 #map_wrapper .scroll {
   height: 100%; }

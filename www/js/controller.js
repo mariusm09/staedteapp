@@ -40,52 +40,37 @@
     function initialize() {
         var map;
         var bounds = new google.maps.LatLngBounds();
-        var mapOptions = {
-            mapTypeId: 'roadmap'
-        };
 
-        var mapStyles = [
-      {
-          "featureType": "road",
-          "stylers": [
-            { "hue": "#3bff00" }
-          ]
-      }, {
-          "featureType": "water",
-          "stylers": [
-            { "hue": "#ff0000" }
-          ]
-      }, {
-          "featureType": "poi",
-          "stylers": [
-            { "visibility": "off" }
-          ]
-      }, {
-      }
-        ]
+        var mapStyles =
+    [ { "featureType": "water", "stylers": [ { "color": "#000066" } ] },{ "stylers": [ { "visibility": "off" } ] },{ "featureType": "water", "stylers": [ { "visibility": "on" } ] },{ "featureType": "administrative.country", "elementType": "labels", "stylers": [ { "visibility": "simplified" } ] },{ "featureType": "administrative.locality", "elementType": "labels.text.fill", "stylers": [ { "visibility": "on" } ] },{ "featureType": "landscape.natural.terrain", "elementType": "geometry", "stylers": [ { "hue": "#00ccff" }, { "visibility": "on" } ] },{ "featureType": "road.highway.controlled_access", "elementType": "geometry", "stylers": [ { "visibility": "simplified" } ] },{ "featureType": "road.arterial", "stylers": [ { "visibility": "on" } ] },{ "featureType": "transit", "stylers": [ { "visibility": "simplified" } ] },{ "featureType": "road.local", "stylers": [ { "visibility": "on" } ] },{ "featureType": "administrative.country", "stylers": [ { "visibility": "on" } ] },{ "featureType": "landscape.natural", "stylers": [ { "visibility": "on" }, { "saturation": -6 }, { "color": " #FF00" } ] },{ "featureType": "water", "elementType": "geometry.fill", "stylers": [ { "visibility": "on" }, { "color": "#6699FF" }, { "saturation": -49 } ] },{ "featureType": "water", "elementType": "labels", "stylers": [ { "visibility": "off" } ] },{ "stylers": [ { "saturation": -54 } ] },{ } ]
+
+        var mapOptions = {
+            mapTypeId: 'roadmap',
+            styles: mapStyles,
+            tilt: 45
+        };
 
         // show map
         map = new google.maps.Map(document.getElementById("map"), mapOptions);
-        map.setTilt(45);
-
-        //map = new google.maps.Map(document.getElementById('map'), {
-        //    zoom: 8,
-        //    center: { lat: 47.0833, lng: 8.2667 }
-        //});
-        //map.setOptions({ styles: mapStyles });
 
         //Markers
         var markers = [
-            ['Istanbul', 47.05107889, 8.30218792],
-            ['London', 45.0536, 9.3665],
-            ['New York', 40.700710, -74.005774]
+            ['Hong Kong', 22.289662, 114.172712],
+            ['Istanbul', 41.018145, 28.975272],
+            ['London', 51.509415, -0.119451],
+            ['New York', 40.698367, -74.018133],
+            ['Paris', 48.856882, 2.344657],
+            ['Rio de Janeiro', -22.901749, -43.181009]
         ];
 
         //InfoWindows
         var infoWindowContent = [
-            ['Istanbul Beschreibung'],
-            ['London Beschreibung'],
-            ['New York']
+            ['Hong Kong - Die Stadt, die Ost und West vereint'],
+            ['Istanbul - Wo sich zwei Kontinente treffen'],
+            ['London - Die Stadt, die Trends setzt'],
+            ['New York - Die ganze Welt in einer Stadt'],
+            ['Paris - Die Stadt der Liebe'],
+            ['Rio de Janeiro - Immer auf der Sonnenseite']
         ];
 
         var infoWindow = new google.maps.InfoWindow(), marker, i;

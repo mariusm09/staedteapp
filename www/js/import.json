@@ -1,312 +1,358 @@
-
-  {
-    "cities": 
-      {
-        "istanbul": 
-          {
-            "id": "istanbul",
-            "name": "Istanbul",
-            "img": "istanbulstart.jpg",
-            "title": "Istanbul - Wo sich zwei Kontinente treffen",
-            "text": "Seit fast 2 000 Jahren ist Istanbul eine der bedeutendsten Metropolen Europas. Sie zählt zu den ältesten Städten der Welt und liegt stolz und majestätisch direkt an der bekannten Wasserstrasse, dem Bosporus.",
-            "additionalInfos": [
-              {
-                "groupname": "Sehenswürdigkeiten",
-                "icon": "ion-location",
-                "content": [
-                  { "type": "text", "item": "" },
-                  { "type": "list", "item": [ "xy", "xy", "xy", "xy", "xy" ] }
-                ]
-              },
-              {
-                "groupname": "City Facts",
-                "icon": "ion-earth",
-                "content": [
-                  { "type": "text", "item": "" },
-                  { "type": "list", "item": [ "Einwohner: x Millionen", "Kontinent: Europa" ] }
-                ]
-              },
-              {
-                "groupname": "Essen",
-                "icon": "ion-fork",
-                "content": [
-                  { "type": "text", "item": "Essen" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              },
-              {
-                "groupname": "Wissenswertes",
-                "icon": "ion-lightbulb", 
-                "content": [
-                  { "type": "text", "item": "Dies ist Wissenswert zu dieser Stadt" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              },
-              {
-                "groupname": "Finanzen",
-                "icon": "ion-cash", 
-                "content": [
-                  { "type": "text", "item": "Finanzen zu dieser Stadt" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              }
-            ]
-          }
-        ,
-        "paris": 
-          {
-            "id": "paris",
-            "name": "Paris",
-            "img": "parisstart.jpg",
-            "title":  "Paris - Die Stadt der Liebe",
-            "text": "Paris, eine der meistbesuchten Städte der Welt, fasziniert die Besucher durch ihre Architektur, ihre 6500 Jahre lange Geschichte und vor allem durch ihren Zauber, der zwar nicht für alle Besucher gleich erkennbar, aber definitiv in der Luft liegt.",
-            "additionalInfos": [
-              {
-                "groupname": "Sehenswürdigkeiten",
-                "icon": "ion-location",
-                "content": [
-                  { "type": "text", "item": "" },
-                  { "type": "list", "item": [ "xy", "xy", "xy", "xy", "xy" ] }
-                ]
-              },
-              {
-                "groupname": "City Facts",
-                "icon": "ion-earth",
-                "content": [
-                  { "type": "text", "item": "" },
-                  { "type": "list", "item": [ "Einwohner: x Millionen", "Kontinent: Europa" ] }
-                ]
-              },
-              {
-                "groupname": "Essen",
-                "icon": "ion-fork",
-                "content": [
-                  { "type": "text", "item": "Essen" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              },
-              {
-                "groupname": "Wissenswertes",
-                "icon": "ion-lightbulb", 
-                "content": [
-                  { "type": "text", "item": "Dies ist Wissenswert zu dieser Stadt" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              },
-              {
-                "groupname": "Finanzen",
-                "icon": "ion-cash", 
-                "content": [
-                  { "type": "text", "item": "Finanzen zu dieser Stadt" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              }
-            ]
-          }
-        ,
-        "hongkong": 
-          {
-            "id": "hongkong",
-            "name": "Hong Kong",
-            "img": "hongkongstart.jpg",
-            "title":  "Hong Kong - Die Stadt, die Ost und West vereint",
-            "text": "China und Europa, Exotisches und Wohlbekanntes, Ost und West – Hongkong macht es Besuchern leicht, die Stadt zu lieben, denn sie grenzt niemanden aus und gibt jedem das Gefühl, irgendwie zu Hause zu sein.",
-            "additionalInfos": [
-              {
-                "groupname": "Sehenswürdigkeiten",
-                "icon": "ion-location",
-                "content": [
-                  { "type": "text", "item": "" },
-                  { "type": "list", "item": [ "xy", "xy", "xy", "xy", "xy" ] }
-                ]
-              },
-              {
-                "groupname": "City Facts",
-                "icon": "ion-earth",
-                "content": [
-                  { "type": "text", "item": "" },
-                  { "type": "list", "item": [ "Einwohner: x Millionen", "Kontinent: Europa" ] }
-                ]
-              },
-              {
-                "groupname": "Essen",
-                "icon": "ion-fork",
-                "content": [
-                  { "type": "text", "item": "Essen" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              },
-              {
-                "groupname": "Wissenswertes",
-                "icon": "ion-lightbulb", 
-                "content": [
-                  { "type": "text", "item": "Dies ist Wissenswert zu dieser Stadt" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              },
-              {
-                "groupname": "Finanzen",
-                "icon": "ion-cash", 
-                "content": [
-                  { "type": "text", "item": "Finanzen zu dieser Stadt" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              }
-            ]
-          }
-        ,
-        "newyork": 
-          {
-            "id": "newyork",
-            "name": "New York",
-            "img": "newyorkstart.jpg",
-            "title": "New York - Die ganze Welt in einer Stadt",
-            "text": "New York treibe ihre Bewohner in die Sucht, schrieb einst Françoise Sagan. Dem kann man nur zustimmen.",
-            "additionalInfos": [
-              {
-                "groupname": "Sehenswürdigkeiten",
-                "icon": "ion-location",
-                "content": [
-                  { "type": "text", "item": "" },
-                  { "type": "list", "item": [ "xy", "xy", "xy", "xy", "xy" ] }
-                ]
-              },
-              {
-                "groupname": "City Facts",
-                "icon": "ion-earth",
-                "content": [
-                  { "type": "text", "item": "" },
-                  { "type": "list", "item": [ "Einwohner: x Millionen", "Kontinent: Europa" ] }
-                ]
-              },
-              {
-                "groupname": "Essen",
-                "icon": "ion-fork",
-                "content": [
-                  { "type": "text", "item": "Essen" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              },
-              {
-                "groupname": "Wissenswertes",
-                "icon": "ion-lightbulb", 
-                "content": [
-                  { "type": "text", "item": "Dies ist Wissenswert zu dieser Stadt" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              },
-              {
-                "groupname": "Finanzen",
-                "icon": "ion-cash", 
-                "content": [
-                  { "type": "text", "item": "Finanzen zu dieser Stadt" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              }
-            ]
-          }
-        ,
-        "london": 
-          {
-            "id": "london",
-            "name": "London",
-            "img": "londonstart.jpg",
-            "title":  "London - Die Stadt, die Trends setzt",
-            "text": "London, die Stadt mit ihren vielen Gesichtern, war schon immer ein globales Finanz- und Wirtschaftszentrum, ein Schmelztiegel der Kulturen und Magnet für Exzentriker und Kreative",
-            "additionalInfos": [
-              {
-                "groupname": "Sehenswürdigkeiten",
-                "icon": "ion-location",
-                "content": [
-                  { "type": "text", "item": "" },
-                  { "type": "list", "item": [ "xy", "xy", "xy", "xy", "xy" ] }
-                ]
-              },
-              {
-                "groupname": "City Facts",
-                "icon": "ion-earth",
-                "content": [
-                  { "type": "text", "item": "" },
-                  { "type": "list", "item": [ "Einwohner: x Millionen", "Kontinent: Europa" ] }
-                ]
-              },
-              {
-                "groupname": "Essen",
-                "icon": "ion-fork",
-                "content": [
-                  { "type": "text", "item": "Essen" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              },
-              {
-                "groupname": "Wissenswertes",
-                "icon": "ion-lightbulb", 
-                "content": [
-                  { "type": "text", "item": "Dies ist Wissenswert zu dieser Stadt" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              },
-              {
-                "groupname": "Finanzen",
-                "icon": "ion-cash", 
-                "content": [
-                  { "type": "text", "item": "Finanzen zu dieser Stadt" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              }
-            ]
-          }
-        ,
-        "rio": 
-          {
-            "id": "rio",
-            "name": "Rio de Janeiro",
-            "img": "riostart.jpg",
-            "title": "Rio de Janeiro - Immer auf der Sonnenseite",
-            "text":  "Rio de Janeiro, Brasiliens zweitgrößte Stadt, liegt an der Guanabara-Bucht und am Atlantischen Ozean. Die Christusstatue Cristo Redentor mit seinen ausgestreckten Armen thront hoch über der Stadt, auf dem Berg Corcovado. ", 
-            "additionalInfos": [
-              {
-                "groupname": "Sehenswürdigkeiten",
-                "icon": "ion-location",
-                "content": [
-                  { "type": "text", "item": "" },
-                  { "type": "list", "item": [ "xy", "xy", "xy", "xy", "xy" ] }
-                ]
-              },
-              {
-                "groupname": "City Facts",
-                "icon": "ion-earth",
-                "content": [
-                  { "type": "text", "item": "" },
-                  { "type": "list", "item": [ "Einwohner: x Millionen", "Kontinent: Europa" ] }
-                ]
-              },
-              {
-                "groupname": "Essen",
-                "icon": "ion-fork",
-                "content": [
-                  { "type": "text", "item": "Essen" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              },
-              {
-                "groupname": "Wissenswertes",
-                "icon": "ion-lightbulb", 
-                "content": [
-                  { "type": "text", "item": "Dies ist Wissenswert zu dieser Stadt" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              },
-              {
-                "groupname": "Finanzen",
-                "icon": "ion-cash", 
-                "content": [
-                  { "type": "text", "item": "Finanzen zu dieser Stadt" },
-                  { "type": "list", "item": [ "" ] }
-                ]
-              }
-            ]
-          }    
+{
+  "cities" : {
+    "hongkong" : {
+      "additionalInfos" : [ {
+        "content" : [ {
+          "item" : "",
+          "type" : "text"
+        }, {
+          "item" : [ "item1", "item2", "item3", "item4", "item5" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Sehenswürdigkeiten",
+        "icon" : "ion-location"
+      }, {
+        "content" : [ {
+          "item" : "",
+          "type" : "text"
+        }, {
+          "item" : [ "Einwohner: x Millionen", "Kontinent: Europa" ],
+          "type" : "list"
+        } ],
+        "groupname" : "City Facts",
+        "icon" : "ion-earth"
+      }, {
+        "content" : [ {
+          "item" : "Essen",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Essen",
+        "icon" : "ion-fork"
+      }, {
+        "content" : [ {
+          "item" : "Dies ist Wissenswert zu dieser Stadt",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Wissenswertes",
+        "icon" : "ion-lightbulb"
+      }, {
+        "content" : [ {
+          "item" : "Finanzen zu dieser Stadt",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Finanzen",
+        "icon" : "ion-cash"
+      } ],
+      "countryCode" : "HK",
+      "id" : "hongkong",
+      "img" : "hongkongstart.jpg",
+      "name" : "Hong Kong",
+      "text" : "China und Europa, Exotisches und Wohlbekanntes, Ost und West – Hongkong macht es Besuchern leicht, die Stadt zu lieben, denn sie grenzt niemanden aus und gibt jedem das Gefühl, irgendwie zu Hause zu sein.",
+      "title" : "Hong Kong - Die Stadt, die Ost und West vereint"
+    },
+    "istanbul" : {
+      "additionalInfos" : [ {
+        "content" : [ {
+          "item" : "",
+          "type" : "text"
+        }, {
+          "item" : [ "item1", "item2", "item3", "item4", "item5" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Sehenswürdigkeiten",
+        "icon" : "ion-location"
+      }, {
+        "content" : [ {
+          "item" : "",
+          "type" : "text"
+        }, {
+          "item" : [ "Einwohner: x Millionen", "Kontinent: Europa" ],
+          "type" : "list"
+        } ],
+        "groupname" : "City Facts",
+        "icon" : "ion-earth"
+      }, {
+        "content" : [ {
+          "item" : "Essen",
+          "type" : "text"
+        }, {
+          "item" : [ "item1", "item2", "item3", "item4", "item5" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Essen",
+        "icon" : "ion-fork"
+      }, {
+        "content" : [ {
+          "item" : "Dies ist Wissenswert zu dieser Stadt",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Wissenswertes",
+        "icon" : "ion-lightbulb"
+      }, {
+        "content" : [ {
+          "item" : "Finanzen zu dieser Stadt",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Finanzen",
+        "icon" : "ion-cash"
+      } ],
+      "countryCode" : "TR",
+      "id" : "istanbul",
+      "img" : "istanbulstart.jpg",
+      "name" : "Istanbul",
+      "text" : "Seit fast 2 000 Jahren ist Istanbul eine der bedeutendsten Metropolen Europas. Sie zählt zu den ältesten Städten der Welt und liegt stolz und majestätisch direkt an der bekannten Wasserstrasse, dem Bosporus.",
+      "title" : "Istanbul - Wo sich zwei Kontinente treffen"
+    },
+    "london" : {
+      "additionalInfos" : [ {
+        "content" : [ {
+          "item" : "",
+          "type" : "text"
+        }, {
+          "item" : [ "item1", "item2", "item3", "item4", "item5" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Sehenswürdigkeiten",
+        "icon" : "ion-location"
+      }, {
+        "content" : [ {
+          "item" : "",
+          "type" : "text"
+        }, {
+          "item" : [ "Einwohner: x Millionen", "Kontinent: Europa" ],
+          "type" : "list"
+        } ],
+        "groupname" : "City Facts",
+        "icon" : "ion-earth"
+      }, {
+        "content" : [ {
+          "item" : "Essen",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Essen",
+        "icon" : "ion-fork"
+      }, {
+        "content" : [ {
+          "item" : "Dies ist Wissenswert zu dieser Stadt",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Wissenswertes",
+        "icon" : "ion-lightbulb"
+      }, {
+        "content" : [ {
+          "item" : "Finanzen zu dieser Stadt",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Finanzen",
+        "icon" : "ion-cash"
+      } ],
+      "countryCode" : "UK",
+      "id" : "london",
+      "img" : "londonstart.jpg",
+      "name" : "London",
+      "text" : "London, die Stadt mit ihren vielen Gesichtern, war schon immer ein globales Finanz- und Wirtschaftszentrum, ein Schmelztiegel der Kulturen und Magnet für Exzentriker und Kreative",
+      "title" : "London - Die Stadt, die Trends setzt"
+    },
+    "newyork" : {
+      "additionalInfos" : [ {
+        "content" : [ {
+          "item" : "",
+          "type" : "text"
+        }, {
+          "item" : [ "item1", "item2", "item3", "item4", "item5" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Sehenswürdigkeiten",
+        "icon" : "ion-location"
+      }, {
+        "content" : [ {
+          "item" : "",
+          "type" : "text"
+        }, {
+          "item" : [ "Einwohner: x Millionen", "Kontinent: Europa" ],
+          "type" : "list"
+        } ],
+        "groupname" : "City Facts",
+        "icon" : "ion-earth"
+      }, {
+        "content" : [ {
+          "item" : "Essen",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Essen",
+        "icon" : "ion-fork"
+      }, {
+        "content" : [ {
+          "item" : "Dies ist Wissenswert zu dieser Stadt",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Wissenswertes",
+        "icon" : "ion-lightbulb"
+      }, {
+        "content" : [ {
+          "item" : "Finanzen zu dieser Stadt",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Finanzen",
+        "icon" : "ion-cash"
+      } ],
+      "countryCode" : "US",
+      "id" : "newyork",
+      "img" : "newyorkstart.jpg",
+      "name" : "New York",
+      "text" : "New York treibe ihre Bewohner in die Sucht, schrieb einst Françoise Sagan. Dem kann man nur zustimmen.",
+      "title" : "New York - Die ganze Welt in einer Stadt"
+    },
+    "paris" : {
+      "additionalInfos" : [ {
+        "content" : [ {
+          "item" : "",
+          "type" : "text"
+        }, {
+          "item" : [ "item1", "item2", "item3", "item4", "item5" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Sehenswürdigkeiten",
+        "icon" : "ion-location"
+      }, {
+        "content" : [ {
+          "item" : "",
+          "type" : "text"
+        }, {
+          "item" : [ "Einwohner: x Millionen", "Kontinent: Europa" ],
+          "type" : "list"
+        } ],
+        "groupname" : "City Facts",
+        "icon" : "ion-earth"
+      }, {
+        "content" : [ {
+          "item" : "Essen",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Essen",
+        "icon" : "ion-fork"
+      }, {
+        "content" : [ {
+          "item" : "Dies ist Wissenswert zu dieser Stadt",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Wissenswertes",
+        "icon" : "ion-lightbulb"
+      }, {
+        "content" : [ {
+          "item" : "Finanzen zu dieser Stadt",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Finanzen",
+        "icon" : "ion-cash"
+      } ],
+      "countryCode" : "FR",
+      "id" : "paris",
+      "img" : "parisstart.jpg",
+      "name" : "Paris",
+      "text" : "Paris, eine der meistbesuchten Städte der Welt, fasziniert die Besucher durch ihre Architektur, ihre 6500 Jahre lange Geschichte und vor allem durch ihren Zauber, der zwar nicht für alle Besucher gleich erkennbar, aber definitiv in der Luft liegt.",
+      "title" : "Paris - Die Stadt der Liebe"
+    },
+    "rio" : {
+      "additionalInfos" : [ {
+        "content" : [ {
+          "item" : "",
+          "type" : "text"
+        }, {
+          "item" : [ "item1", "item2", "item3", "item4", "item5" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Sehenswürdigkeiten",
+        "icon" : "ion-location"
+      }, {
+        "content" : [ {
+          "item" : "",
+          "type" : "text"
+        }, {
+          "item" : [ "Einwohner: x Millionen", "Kontinent: Europa" ],
+          "type" : "list"
+        } ],
+        "groupname" : "City Facts",
+        "icon" : "ion-earth"
+      }, {
+        "content" : [ {
+          "item" : "Essen",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Essen",
+        "icon" : "ion-fork"
+      }, {
+        "content" : [ {
+          "item" : "Dies ist Wissenswert zu dieser Stadt",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Wissenswertes",
+        "icon" : "ion-lightbulb"
+      }, {
+        "content" : [ {
+          "item" : "Finanzen zu dieser Stadt",
+          "type" : "text"
+        }, {
+          "item" : [ "" ],
+          "type" : "list"
+        } ],
+        "groupname" : "Finanzen",
+        "icon" : "ion-cash"
+      } ],
+      "countryCode" : "BR",
+      "id" : "rio",
+      "img" : "riostart.jpg",
+      "name" : "Rio de Janeiro",
+      "text" : "Rio de Janeiro, Brasiliens zweitgrößte Stadt, liegt an der Guanabara-Bucht und am Atlantischen Ozean. Die Christusstatue Cristo Redentor mit seinen ausgestreckten Armen thront hoch über der Stadt, auf dem Berg Corcovado. ",
+      "title" : "Rio de Janeiro - Immer auf der Sonnenseite"
+    }
   }
-  }
-    
+}

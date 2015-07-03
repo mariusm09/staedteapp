@@ -11,6 +11,39 @@
             <p>
               {{city.text}}  
             </p>
+
+            <div>
+                <div class="weathers">
+                    <div ng-hide="hasWeatherData">Keine Wetterdaten gefunden.</div>
+                        <div ng-show="hasWeatherData" ng-repeat="weather in weatherdata.weather">
+                            <!--<div class="weatherIcon" id="{{weather.id}}" data-weather-icon></div>-->
+                            <div data-weather-icon class="weatherIcon" id="{{weather.id}}"></div>
+                            <temperature class="temperature" measure="measure" kelvin="{{weatherdata.main.temp}}"></temperature>
+
+                            <span class="description">{{weather.main}} ({{weather.description}})</span>
+                            <hr>
+                            <span class="humidity">{{weatherdata.main.humidity}}% humidity</span>
+                        </div>
+                </div>
+
+                <div class="weathers">
+                    <div>{{weatherforecastdata}}</div>
+                    <!--<ul>-->
+                        <!--<li ng-repeat="weather in weatherdata.weather">-->
+                            <!--&lt;!&ndash;<div class="weatherIcon" id="{{weather.id}}" data-weather-icon></div>&ndash;&gt;-->
+                            <!--<div data-weather-icon class="weatherIcon" id="{{weather.id}}"></div>-->
+                            <!--<temperature class="temperature" measure="measure" kelvin="{{weatherdata.main.temp}}"></temperature>-->
+
+                            <!--<span class="description">{{weather.main}} ({{weather.description}})</span>-->
+                            <!--<hr>-->
+                            <!--<span class="humidity">{{weatherdata.main.humidity}}% humidity</span>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                </div>
+
+
+            </div>
+
             <div ng-repeat="group in city.additionalInfos">
                 <div class="item-stable stadtkacheln"
                           ng-click="toggleGroup(group)"

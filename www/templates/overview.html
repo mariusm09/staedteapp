@@ -2,6 +2,7 @@
     <ion-view view-title="Beliebte Städte">
     <!-- Kacheln mit beliebten Städten -->    
         <ion-content>
+            <div ng-show="newdata>1">Neue Daten wurden geladen</div>
             <a ng-repeat="city in cities" href="#/app/city/{{city.id}}">
                 <div id ="{{city.id}}"
                        style="background-image: url(img/{{city.id}}/{{city.img}})"

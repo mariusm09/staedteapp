@@ -28,6 +28,9 @@
 
     // download the data into a local object
     var cities = $firebaseArray(ref);
+    var city = $forebaseArry(ref);
+    var eminem = (city);
+    var em = (eminem);
 
     return {
         getCities: function () {
